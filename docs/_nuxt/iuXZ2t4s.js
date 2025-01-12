@@ -1,0 +1,1 @@
+import{_ as o,c as n,o as s,w as a,a as _,b as c}from"./BewlX8a6.js";const r={};function l(u,e){const t=c;return s(),n(t,{name:"site"},{default:a(d=>e[0]||(e[0]=[_("div",null,"Hello",-1)])),_:1})}const i=o(r,[["render",l]]);export{i as default};
