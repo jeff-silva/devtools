@@ -1,0 +1,11 @@
+{
+  "name": "devtools",
+  "version": "1.0.0",
+  "repository": "https://github.com/jeff-silva/devtools.git",
+  "author": "Jeferson Silva <jeferson.i.silva@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "docker compose up --build --force-recreate --remove-orphans",
+    "build": "sh build.sh"
+  }
+}
