@@ -18,6 +18,7 @@
               title: 'Tailwind',
               children: [{ title: 'Search', to: '/tailwind/search' }],
             },
+            { title: 'Links', to: '/links' },
           ]"
         />
         <slot

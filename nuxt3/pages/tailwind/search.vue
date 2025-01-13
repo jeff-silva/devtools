@@ -1,28 +1,30 @@
 <template>
   <nuxt-layout name="site">
-    <v-text-field v-model="search.params.term" />
+    <v-container max-width="700">
+      <v-text-field v-model="search.params.term" />
 
-    <v-list>
-      <v-list-item :subtitle="`Com o termo '${search.params.term}'`" />
-      <template v-for="o in search.results.blocks">
-        <v-list-item
-          :href="o.url"
-          target="_blank"
-        >
-          {{ o.url }}
-        </v-list-item>
-      </template>
+      <v-list>
+        <v-list-item :subtitle="`Com o termo '${search.params.term}'`" />
+        <template v-for="o in search.results.blocks">
+          <v-list-item
+            :href="o.url"
+            target="_blank"
+          >
+            {{ o.name }}
+          </v-list-item>
+        </template>
 
-      <v-list-item :subtitle="`Outros`" />
-      <template v-for="o in search.results.others">
-        <v-list-item
-          :href="o.url"
-          target="_blank"
-        >
-          {{ o.url }}
-        </v-list-item>
-      </template>
-    </v-list>
+        <v-list-item :subtitle="`Outros`" />
+        <template v-for="o in search.results.others">
+          <v-list-item
+            :href="o.url"
+            target="_blank"
+          >
+            {{ o.name }}
+          </v-list-item>
+        </template>
+      </v-list>
+    </v-container>
   </nuxt-layout>
 </template>
 
