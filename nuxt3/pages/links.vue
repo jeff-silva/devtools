@@ -17,7 +17,12 @@
             <template v-for="o in links.items">
               <tr>
                 <td>
-                  <a href="">{{ o.name }}</a>
+                  <a
+                    :href="o.url"
+                    target="_blank"
+                  >
+                    {{ o.name }}
+                  </a>
                 </td>
                 <td>
                   <div class="d-flex ga-2">
@@ -57,6 +62,7 @@ const links = reactive({
     { id: "seo", name: "SEO", color: getRandomColor() },
     { id: "name-checker", name: "Name Checker", color: getRandomColor() },
     { id: "alternative", name: "Alternative", color: getRandomColor() },
+    { id: "icon", name: "Icon", color: getRandomColor() },
   ],
   items: computed(() => {
     let items = [
@@ -68,7 +74,7 @@ const links = reactive({
       {
         name: "HTML Icons and Letters",
         url: "https://www.toptal.com/designers/htmlarrows/letters/",
-        tags: [],
+        tags: ["icon"],
       },
       {
         name: "The One Generator",
@@ -99,6 +105,21 @@ const links = reactive({
         name: "Open Source Alternative to Softwares",
         url: "https://www.opensourcealternative.to",
         tags: ["alternative"],
+      },
+      {
+        name: "Icones Icons",
+        url: "https://icones.js.org/collection/all",
+        tags: ["icon"],
+      },
+      {
+        name: "Trend Shift - Trend Repositories",
+        url: "https://trendshift.io",
+        tags: [],
+      },
+      {
+        name: "Snap Drop - Share Files in Your Wifi",
+        url: "https://snapdrop.net",
+        tags: [],
       },
     ];
 
