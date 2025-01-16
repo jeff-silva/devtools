@@ -121,6 +121,11 @@ const links = reactive({
         url: "https://snapdrop.net",
         tags: [],
       },
+      {
+        name: "Uiverse - Pure CSS Ui Components",
+        url: "https://uiverse.io",
+        tags: [],
+      },
     ];
 
     return items.map((item) => {
